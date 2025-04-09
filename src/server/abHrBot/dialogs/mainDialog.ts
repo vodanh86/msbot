@@ -62,7 +62,6 @@ export class MainDialog extends ComponentDialog {
     }
 
     private async actStep(stepContext: WaterfallStepContext): Promise<DialogTurnResult> {
-        console.log(1);
         if (stepContext.result) {
             /*
             ** This is where you would add LUIS to your bot, see this link for more information:
@@ -103,7 +102,6 @@ export class MainDialog extends ComponentDialog {
                 body: JSON.stringify(body)
             });
             const data = await response.json();
-            console.log(data.answer);
             await stepContext.context.sendActivity(data.answer);
             return await stepContext.next();
             /* switch (stepContext.context.activity.text) {

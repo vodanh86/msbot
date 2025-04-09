@@ -17,7 +17,7 @@ const lint = !(argv["no-linting"] || argv.l === true);
 const config = [{
     entry: {
         server: [
-            path.join(__dirname, "/src/server/server.ts")
+            path.join(__dirname, "/src/server/server.js")
         ]
     },
     mode: debug ? "development" : "production",

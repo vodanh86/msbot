@@ -47,7 +47,6 @@ export class TeamsInfoDialog extends ComponentDialog {
     }
 
     private async actStep(stepContext: WaterfallStepContext): Promise<DialogTurnResult> {
-        console.log("12222");
         if (stepContext.result) {
             const result = stepContext.result;
 

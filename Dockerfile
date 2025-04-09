@@ -26,6 +26,7 @@ WORKDIR /app
 # copy from build image
 COPY --from=BUILD_IMAGE /app/dist ./dist
 COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
+COPY certs /app/certs
 
 ENV DEBUG msteams
 
