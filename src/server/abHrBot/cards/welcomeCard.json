@@ -12,7 +12,7 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://raw.githubusercontent.com/pnp/media/master/parker/teams/300w/parker-teams-300.png",
+                          "url": "https://abbank.vn/uploads/images/2020/09/28/logo.png",
                           "size": "Medium"
                       }
                   ],
@@ -28,14 +28,14 @@
                           "spacing": "Medium",
                           "size": "Large",
                           "weight": "Bolder",
-                          "text": "Welcome to AbHr",
+                          "text": "Welcome to Abbank",
                           "wrap": true,
                           "maxLines": 0
                       },
                       {
                           "type": "TextBlock",
                           "size": "default",
-                          "text": "Hello, nice to meet you! I'm AbHr created using #yoTeams and happy to assist you 😀",
+                          "text": "Xin chào các bạn! Vui lòng được trợ giúp các bạn 😀",
                           "wrap": true,
                           "maxLines": 0
                       }
@@ -48,14 +48,14 @@
           "actions": [
               {
                   "type": "Action.OpenUrl",
-                  "title": "Learn more about Yo Teams",
-                  "url": "https://aka.ms/yoteams"
+                  "title": "Tìm hiểu về ngân hàng An Bình",
+                  "url": "https://abbank.vn/"
               },
               {
-                  "type": "Action.OpenUrl",
-                  "title": "Learn more about bots in Teams",
-                  "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots"
-              }
+                "type": "Action.OpenUrl",
+                "title": "Tìm hiểu về ngân hàng An Bình",
+                "url": "https://abbank.vn/"
+            }
           ],
           "height": "stretch",
           "horizontalAlignment": "Center"
@@ -69,7 +69,7 @@
                   "data": {
                     "msteams": {
                       "type": "messageBack",
-                      "displayText": "who am i?",
+                      "displayText": "Tôi là ai?",
                       "text": "who"
                     }
                   }
@@ -80,7 +80,7 @@
                 "data": {
                   "msteams": {
                     "type": "messageBack",
-                    "displayText": "mention me",
+                    "displayText": "Tôi có thể làm gì",
                     "text": "mention"
                   }
                 }
@@ -91,7 +91,7 @@
                 "data": {
                   "msteams": {
                     "type": "messageBack",
-                    "displayText": "get help",
+                    "displayText": "Trợ giúp",
                     "text": "help"
                   }
                 }

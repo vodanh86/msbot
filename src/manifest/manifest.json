@@ -4,18 +4,18 @@
   "id": "{{APPLICATION_ID}}",
   "version": "{{VERSION}}",
   "developer": {
-    "name": "Ab",
+    "name": "Abbank Developer",
     "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
     "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
     "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "An Bình Hr",
-    "full": "An Bình Hr"
+    "short": "An Bình Bank Assistant",
+    "full": "An Bình Assistant"
   },
   "description": {
-    "short": "TODO: add short description here",
-    "full": "TODO: add full description here"
+    "short": "Assistant for An Bình Bank",
+    "full": "Assistant for An Bình Bank"
   },
   "icons": {
     "outline": "icon-outline.png",
@@ -26,7 +26,7 @@
   "staticTabs": [
     {
       "entityId": "edb59430-0bbd-11f0-a731-47c560201550",
-      "name": "About AbHr Bot",
+      "name": "About Abbank",
       "contentUrl": "https://{{PUBLIC_HOSTNAME}}/abHrBot/aboutAbHrBot.html",
       "scopes": [
         "personal"
