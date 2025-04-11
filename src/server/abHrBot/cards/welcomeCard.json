@@ -65,34 +65,34 @@
           "actions": [
               {
                   "type": "Action.Submit",
-                  "title": "Tôi là ai?",
+                  "title": "Giới thiệu tổng quan?",
                   "data": {
                     "msteams": {
                       "type": "messageBack",
-                      "displayText": "Tôi là ai?",
-                      "text": "who"
+                      "displayText": "Giới thiệu tổng quan về ngân hàng An Bình?",
+                      "text": "Giới thiệu tổng quan về ngân hàng An Bình"
                     }
                   }
               },
               {
                 "type": "Action.Submit",
-                "title": "Tôi có thể làm gì",
+                "title": "5 Giá trị cốt lõi",
                 "data": {
                   "msteams": {
                     "type": "messageBack",
-                    "displayText": "Tôi có thể làm gì",
-                    "text": "mention"
+                    "displayText": "5 Giá trị cốt lõi",
+                    "text": "5 Giá trị cốt lõi"
                   }
                 }
               },
               {
                 "type": "Action.Submit",
-                "title": "Trợ giúp",
+                "title": "Chế độ đãi ngộ",
                 "data": {
                   "msteams": {
                     "type": "messageBack",
-                    "displayText": "Trợ giúp",
-                    "text": "help"
+                    "displayText": "Chế độ đãi ngộ",
+                    "text": "Chế độ đãi ngộ"
                   }
                 }
               }
