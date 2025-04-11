@@ -53,8 +53,8 @@
               },
               {
                 "type": "Action.OpenUrl",
-                "title": "Tìm hiểu về ngân hàng An Bình",
-                "url": "https://abbank.vn/"
+                "title": "Liên hệ với ngân hàng An Bình",
+                "url": "https://abbank.vn/lien-he.html"
             }
           ],
           "height": "stretch",
@@ -65,7 +65,7 @@
           "actions": [
               {
                   "type": "Action.Submit",
-                  "title": "Who am I?",
+                  "title": "Tôi là ai?",
                   "data": {
                     "msteams": {
                       "type": "messageBack",
@@ -76,7 +76,7 @@
               },
               {
                 "type": "Action.Submit",
-                "title": "Mention me",
+                "title": "Tôi có thể làm gì",
                 "data": {
                   "msteams": {
                     "type": "messageBack",
@@ -87,7 +87,7 @@
               },
               {
                 "type": "Action.Submit",
-                "title": "Get help",
+                "title": "Trợ giúp",
                 "data": {
                   "msteams": {
                     "type": "messageBack",
