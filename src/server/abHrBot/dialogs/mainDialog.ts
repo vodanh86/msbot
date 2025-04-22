@@ -89,7 +89,7 @@ export class MainDialog extends ComponentDialog {
         } else if (this.onboarding) {
             const body = {
                 question: stepContext.context.activity.text,
-                model: "gpt-4o",
+                model: "o4-mini",
                 session_id: "1"
             };
 
