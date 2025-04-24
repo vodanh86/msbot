@@ -89,8 +89,9 @@ export class MainDialog extends ComponentDialog {
         } else if (this.onboarding) {
             const body = {
                 question: stepContext.context.activity.text,
-                model: "o4-mini",
-                session_id: "1"
+                model: "gpt-4o",
+                session_id: stepContext.context.activity.from.id,
+                name: stepContext.context.activity.from.name,
             };
 
             const response = await fetch(process.env.LANGCHAIN_API_URL + "/chat", {
