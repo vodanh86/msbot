@@ -50,7 +50,6 @@ export class MainDialog extends ComponentDialog {
     private async introStep(stepContext: WaterfallStepContext): Promise<DialogTurnResult> {
         console.log("Service URL:", stepContext.context.activity.serviceUrl);
 
-        
         if ((stepContext.options as any).restartMsg) {
             const messageText = (stepContext.options as any).restartMsg ? (stepContext.options as any).restartMsg : "What can I help you with today?";
             const promptMessage = MessageFactory.text(messageText, messageText, InputHints.ExpectingInput);
@@ -91,7 +90,7 @@ export class MainDialog extends ComponentDialog {
                 question: stepContext.context.activity.text,
                 model: "gpt-4o",
                 session_id: stepContext.context.activity.from.id,
-                name: stepContext.context.activity.from.name,
+                name: stepContext.context.activity.from.name
             };
 
             const response = await fetch(process.env.LANGCHAIN_API_URL + "/chat", {

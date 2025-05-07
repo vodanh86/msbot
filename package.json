@@ -25,6 +25,7 @@
     "express-session": "~1.17.2",
     "morgan": "~1.10.0",
     "msteams-react-base-component": "^4.0.1",
+    "node-vault-client": "^1.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },

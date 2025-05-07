@@ -5,9 +5,9 @@
   "version": "1.0.1",
   "developer": {
     "name": "Abbank Developer",
-    "websiteUrl": "https://abhr.azurewebsites.net",
-    "privacyUrl": "https://abhr.azurewebsites.net/privacy.html",
-    "termsOfUseUrl": "https://abhr.azurewebsites.net/tou.html"
+    "websiteUrl": "https://chatbot.abbank.vn",
+    "privacyUrl": "https://chatbot.abbank.vn/privacy.html",
+    "termsOfUseUrl": "https://chatbot.abbank.vn/tou.html"
   },
   "name": {
     "short": "An Bình Bank Assistant",
@@ -27,7 +27,7 @@
     {
       "entityId": "edb59430-0bbd-11f0-a731-47c560201550",
       "name": "About Abbank",
-      "contentUrl": "https://abhr.azurewebsites.net/abHrBot/aboutAbHrBot.html",
+      "contentUrl": "https://chatbot.abbank.vn/abHrBot/aboutAbHrBot.html",
       "scopes": [
         "personal"
       ]
@@ -74,7 +74,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "abhr.azurewebsites.net"
+    "chatbot.abbank.vn"
   ],
   "showLoadingIndicator": true
 }
