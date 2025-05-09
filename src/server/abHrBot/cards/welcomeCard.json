@@ -48,12 +48,12 @@
           "actions": [
               {
                   "type": "Action.OpenUrl",
-                  "title": "Tìm hiểu về ngân hàng An Bình",
+                  "title": "Trang web ngân hàng An Bình",
                   "url": "https://abbank.vn/"
               },
               {
                 "type": "Action.OpenUrl",
-                "title": "Liên hệ với ngân hàng An Bình",
+                "title": "Thông tin liên hệ với ngân hàng An Bình",
                 "url": "https://abbank.vn/lien-he.html"
             }
           ],
@@ -81,7 +81,7 @@
                   "msteams": {
                     "type": "messageBack",
                     "displayText": "5 Giá trị cốt lõi",
-                    "text": "5 Giá trị cốt lõi"
+                    "text": "5 Giá trị cốt lõi của ngân hàng An Bình"
                   }
                 }
               },
@@ -92,7 +92,7 @@
                   "msteams": {
                     "type": "messageBack",
                     "displayText": "Chế độ đãi ngộ",
-                    "text": "Chế độ đãi ngộ"
+                    "text": "Chế độ đãi ngộ của ngân hàng An Bình"
                   }
                 }
               }

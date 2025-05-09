@@ -10,8 +10,8 @@
     "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "An Bình Bank Assistant",
-    "full": "An Bình Assistant"
+    "short": "ABBuddy",
+    "full": "ABBuddy"
   },
   "description": {
     "short": "Assistant for An Bình Bank",
