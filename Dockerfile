@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . /app/
 
 # install with legacy-peer-deps
-RUN npm install --legacy-peer-deps
+RUN rm -rf node_modules && npm install --legacy-peer-deps
+
 
 # build
 RUN npm run build
