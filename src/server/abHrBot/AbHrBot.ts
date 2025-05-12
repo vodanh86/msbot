@@ -4,39 +4,9 @@ import { CardFactory, ConversationState, MemoryStorage, UserState, TurnContext }
 import { DialogBot } from "./dialogBot";
 import { MainDialog } from "./dialogs/mainDialog";
 import WelcomeCard from "./cards/welcomeCard";
-import { app } from "@microsoft/teams-js";
-import {VaultClient} from "node-vault-client";
 
 // Initialize debug logging module
 const log = debug("msteams");
-const VaultClient = require('node-vault-client');
-
-var appId = process.env.MICROSOFT_APP_ID || "";
-var appPassword = process.env.MICROSOFT_APP_PASSWORD || "";
-
-const vaultClient = VaultClient.boot('main', {
-    api: { url: process.env.VAULT_URL },
-    auth: {
-        type: 'token',
-        config: { token: process.env.VAULT_TOKEN }
-    },
-});
-
-async function initializeCredentials() {
-    try {
-        const vaultData = await vaultClient.read('ai-platform/data/bot');
-        appId = vaultData.__data.data.app_id;
-        appPassword = vaultData.__data.data.app_password;
-        console.log('Vault Data:', vaultData);
-    } catch (error) {
-        console.error('Failed to load credentials from Vault:', error);
-    }
-}
-
-// Gọi hàm khởi tạo để lấy thông tin từ Vault
-(async () => {
-    await initializeCredentials();
-})();
 
 /**
  * Implementation for AbHr Bot
@@ -45,9 +15,9 @@ async function initializeCredentials() {
       "/api/messages",
       new MemoryStorage(),
       // eslint-disable-next-line no-undef
-      appId,
+      process.env.MICROSOFT_APP_ID,
       // eslint-disable-next-line no-undef
-      appPassword)
+      process.env.MICROSOFT_APP_PASSWORD)
 @PreventIframe("/abHrBot/aboutAbHrBot.html")
 export class AbHrBot extends DialogBot {
     constructor(conversationState: ConversationState, userState: UserState) {

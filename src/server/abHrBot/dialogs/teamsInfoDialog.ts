@@ -50,9 +50,9 @@ export class TeamsInfoDialog extends ComponentDialog {
         if (stepContext.result) {
             const result = stepContext.result;
 
-                    // Log the IP or service URL
-        console.log("Service URL:", stepContext.context.activity.serviceUrl);
-        console.log("User Info:", stepContext.context.activity.from);
+            // Log the IP or service URL
+            console.log("Service URL:", stepContext.context.activity.serviceUrl);
+            console.log("User Info:", stepContext.context.activity.from);
 
             switch (result) {
                 case "yes": {

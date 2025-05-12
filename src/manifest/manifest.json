@@ -26,7 +26,7 @@
   "staticTabs": [
     {
       "entityId": "edb59430-0bbd-11f0-a731-47c560201550",
-      "name": "About Abbank",
+      "name": "About ABBuddy",
       "contentUrl": "https://{{PUBLIC_HOSTNAME}}/abHrBot/aboutAbHrBot.html",
       "scopes": [
         "personal"

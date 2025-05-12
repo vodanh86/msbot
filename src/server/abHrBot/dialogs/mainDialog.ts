@@ -86,6 +86,9 @@ export class MainDialog extends ComponentDialog {
                 }
             }
         } else if (this.onboarding) {
+            // Gửi sự kiện "typing" trong khi chờ phản hồi từ API
+            await stepContext.context.sendActivity({ type: "typing" });
+
             const body = {
                 question: stepContext.context.activity.text,
                 model: "gpt-4o",
@@ -93,16 +96,22 @@ export class MainDialog extends ComponentDialog {
                 name: stepContext.context.activity.from.name
             };
 
-            const response = await fetch(process.env.LANGCHAIN_API_URL + "/chat", {
-                method: "POST",
-                headers: {
-                    accept: "application/json",
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(body)
-            });
-            const data = await response.json();
-            await stepContext.context.sendActivity(data.answer);
+            try {
+                const response = await fetch(process.env.LANGCHAIN_API_URL + "/chat", {
+                    method: "POST",
+                    headers: {
+                        accept: "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(body)
+                });
+                const data = await response.json();
+                await stepContext.context.sendActivity(data.answer);
+            } catch (error) {
+                console.error("Error:", error);
+                await stepContext.context.sendActivity("Sorry, I couldn't process your request at the moment.");
+            }
+
             return await stepContext.next();
             /* switch (stepContext.context.activity.text) {
                 case "who": {
