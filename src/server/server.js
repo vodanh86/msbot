@@ -99,7 +99,7 @@ app.use("/", express.static(path.join(__dirname, "web/"), {
     index: "index.html"
 }));
 
-// Khởi chạy server HTTPS
-https.createServer(sslOptions, app).listen(port, () => {
-    log(`Server running on https://localhost:${port}`);
+// Khởi động server
+app.listen(port, () => {
+    log(`Server running on ${port}`);
 });
